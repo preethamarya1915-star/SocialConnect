@@ -1,0 +1,1 @@
+{% extends "social/base.html" %}{% block content %}<section class="card formbox"><h1>{{heading}}</h1>{% for person in users %}<p><a href="{% url 'profile' person.username %}">@{{person.username}}</a></p>{% empty %}<p>No users to show yet.</p>{% endfor %}</section>{% endblock %}
